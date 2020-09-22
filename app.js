@@ -10,10 +10,16 @@ app.get('/', function (req, res){
     res.sendFile(file)
 })
 
+app.get('/index.css', function (req, res){
+
+    let file = path.resolve('styles/index.css')
+   res.sendFile(file)
+})
+
 app.get('*', function (req,res){
 
     if (req.url.includes('.')) {
-        let file = path.resolve('public/img' + req.url)
+        let file = path.resolve('public/' + req.url)
        return res.sendFile(file)
     }
     })

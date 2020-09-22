@@ -1,0 +1,21 @@
+header {
+    background-color: #EAC926;
+}
+
+ul li {
+    font-family: 'rotobo', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'rotobo', sans-serif;
+}
+
+
+
+#color-verde {
+    color: #39b54a ;
+}
