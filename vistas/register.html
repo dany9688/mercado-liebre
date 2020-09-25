@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercado Liebre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+    
+    <body>
+        
+    <header>
+        <div>
+            <img  class="logo w-50"src="/img/logo-mercado-liebre.svg" alt="">
+            <form action="POST">
+                <input class="w-50" type="text" placeholder="Busqueda"><button type="sumbit"><i class="fas fa-search"></i></button>
+    
+            </form>
+            <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de credito</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="register.html">Crea tu cuenta </a><i class="far fa-address-card"></i></li>
+                <li><a href="login.html">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/" method="GET">
+            <div>
+                <input type="text" name="name" id="name" placeholder="Nombre y apellido">
+            </div> 
+            <div>
+                <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+            </div> 
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div> 
+            <p>Fecha de nacimiento</p>
+            <div>
+                <input type="date" name="nacimiento" id="nacimiento" placeholder="Fecha de nacimiento">
+            </div> 
+            <div>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </div> 
+            <p>Perfil del usuario</p>
+            <div>
+                <input type="radio" name="perfil" value="comprar">Comprar
+                <input type="radio" name="perfil" value="vender">Vender
+            </div>
+            <p>Intereses</p>
+            <div>
+                <input type="checkbox" name="interes" value="electro">Electro 
+                <input type="checkbox" name="interes" value="moda">Moda
+                <input type="checkbox" name="interes" value="hogar">Hogar
+                <input type="checkbox" name="interes" value="jugueteria">Jugueteria 
+                <input type="checkbox" name="interes" value="vida-sana">Vida Sana
+            </div>
+            <div>
+                <p>Elegí tu foto de usuario</p>
+                <button type="button">Seleccionar archivo</button>No se eligió archivo
+            </div>
+            <p>Contraseña</p>
+            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+            </div> 
+            <p>Confirmar contraseña</p>
+            <input type="password" name="password2" id="password2" placeholder="Confirmar contraseña">
+            </div>
+            <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+             </div>
+        </form>
+
+    </main>
+    <footer>
+        <article>
+            <i class="color-azul fas fa-credit-card"></i>
+            <p>Pagá con tarjeta o en efectivo</p>
+            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de
+                pago. ¡Y siempre es seguro!</p>
+        </article>
+        <article>
+            <i class="color-azul fas fa-gift"></i>
+            <p>Envío gratis desde los $ 2.500</p>
+            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
+                productos. Es un beneficio de MercadoPuntos.</p>
+        </article>
+        <article>
+            <i class="color-azul fas fa-user-shield"></i>
+            <p>Seguridad, de principio a fin</p>
+            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
+                porque estás siempre prtegid@.</p>
+        </article>
+        <div>
+            <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

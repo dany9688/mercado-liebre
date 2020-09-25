@@ -1,3 +1,7 @@
+body{
+    background-color: #ebebeb;
+}
+
 header {
     background-color: #EAC926;
 }
@@ -5,6 +9,12 @@ header {
 ul li {
     font-family: 'rotobo', sans-serif;
 }
+
+ul {
+    list-style-image: none;
+    margin-left: 0;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -12,10 +22,84 @@ a {
 
 p {
     font-family: 'rotobo', sans-serif;
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+
+.color-verde {
+    color: #39b54a ;
+}
+
+.color-azul {
+    color:#03264C;
+}
+
+.articulo {
+    background-color: white;
+}
+
+
+#links {
+    display: none;    
+
+}
+
+#boton-menu{
+    text-align: center;
+    font-size: 20px;
+    background-color: #0044aa;
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#boton-menu:hover {
+    background-color: #0022aa;
+    cursor: pointer;
+}
+
+#boton-menu:hover .links {
+    display: inline-block;
+}
+
+.hamburg {
+    text-align: center;
 }
 
 
 
-#color-verde {
-    color: #39b54a ;
+
+
+
+#navegacion {
+
+}
+
+#navegacion .logo,
+#navegacion .search {
+
+}
+
+.w-50 {
+    width: 50%;
 }

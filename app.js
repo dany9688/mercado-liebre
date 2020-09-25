@@ -10,6 +10,17 @@ app.get('/', function (req, res){
     res.sendFile(file)
 })
 
+app.get('/register.html', function (req, res){
+
+    let file = path.resolve('vistas/register.html')
+    res.sendFile(file)
+})
+
+app.get('/login.html', function (req, res){
+
+    let file = path.resolve('vistas/login.html')
+    res.sendFile(file)
+})
 app.get('/index.css', function (req, res){
 
     let file = path.resolve('styles/index.css')
