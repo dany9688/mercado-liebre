@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mercado Liebre</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="/styles/login.css">
     </head>
     
-    <body>
+<body>
         
     <header>
         <div>
@@ -19,30 +19,40 @@
             </form>
             <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de credito</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="register.html">Crea tu cuenta </a><i class="far fa-address-card"></i></li>
-                <li><a href="login.html">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
-            </ul>
+        <nav id="menu">
+    
+            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+            <label for="abrir-cerrar" class="toggle-button">
+                <span class="cerrar" title="Cerrar">Cerrar</span>
+                <span class="abrir" title="Abrir">Abrir</span>
+                <ul class="links">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="links">
+                    <li><a href="register.html">Crea tu cuenta </a><i class="far fa-address-card"></i></li>
+                    <li><a href="login.html">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </label>
+
+    
+    
         </nav>
     </header>
-    <main>
+
+<main>
         <form action="/" method="GET">
             <div>
-                <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+                <input class="input" type="text" name="user" id="user" placeholder="Nombre de usuario">
             </div> 
             <div>
-                <input type="password" name="password" id="password" placeholder="Ingresar contraseña">
+                <input class="input" type="password" name="password" id="password" placeholder="Ingresar contraseña">
             </div> 
             <div>
-                <button type="submit">Ingresar</button>
+                <button class= "ingresar"type="submit">Ingresar</button>
             </div>
         </form>
 

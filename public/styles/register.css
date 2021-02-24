@@ -4,13 +4,14 @@ body{
 
 header {
     background-color: #EAC926;
-padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 #menu{
     margin-left: 45%;
     margin-bottom: 20px;
 }
+
 input#abrir-cerrar { 
     visibility:hidden;
     position: absolute;
@@ -123,62 +124,43 @@ p {
     font-size: 12px;
 }
 
-.banner{
-    display: block;
+.input{
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.ingresar{
+    color: white;
+    background-color: #0044AA;
     width: 100%;
-}
-.titulares {
-    font-size: 24px;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 5px;
+    border: 0px;
 }
 
-section{
-    display: block;
+.ingresar:hover {
+    background-color: #0022AA;
 }
 
-.precios {
-    font-size: 18px;
-}
-
-.descuentos {
-    font-size: 16px;
-}
-
-.descripcion {
-    font-size: 16px;
-}
-
-
-.color-verde {
-    color: #39b54a ;
-}
-
-.color-azul {
-    color:#03264C;
-}
-
-.articulo {
-    background-color: white;
+.reset{
+    color: white;
+    background-color:#AA0044;
+    width: 100%;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 15px;
+    border-radius: 5px;
+    border: 0px;
 }
 
-.container-articulo:nth-child(2){
-    margin-top: 0px;
-}
-
-
-.articulo:nth-last-child(5){
-    margin-bottom: 0px;
-}
-
-.w-50 {
-    width: 50%;
+.reset:hover {
+    background-color: #CC1155;
 }
 
 footer{
