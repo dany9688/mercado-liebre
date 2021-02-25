@@ -2,14 +2,53 @@ body{
     background-color: #ebebeb;
 }
 
+.dp-flex{
+    display: flex;
+}
+
 header {
     background-color: #EAC926;
-padding-bottom: 10px;
+    padding: 10px;
+    flex-direction: column;
+
 }
+
+.contenedor-header{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    width: 40%;
+}
+.busqueda{
+    width: 40%;
+    margin-left: 4px;
+}
+
+.busqueda input{
+    border: none;
+    
+}
+
+.busqueda button{
+    position: relative;
+    background-color: white;
+    border: none;
+    
+}
+
+.titulo-principal{
+    font-size: 14px;
+    justify-self: center;
+    margin-left: 10%;
+}
+
+/* Menu */
 
 #menu{
     margin-left: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 input#abrir-cerrar { 
     visibility:hidden;
@@ -28,8 +67,8 @@ input#abrir-cerrar {
     position:relative;
     cursor: pointer;
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .toggle-button:hover {
@@ -104,6 +143,8 @@ input#abrir-cerrar:checked + .toggle-button .links {
     display:block;
 }
 
+/* Menu */
+
 ul li {
     font-family: 'rotobo', sans-serif;
 }
@@ -118,10 +159,7 @@ a {
     color: black;
 }
 
-p {
-    font-family: 'rotobo', sans-serif;
-    font-size: 12px;
-}
+
 
 .banner{
     display: block;
@@ -136,29 +174,78 @@ p {
     margin-right: auto;
 }
 
-section{
-    display: block;
+.ultima-visita{
+    flex-direction: column;
+}
+
+.container-articulos{
+    flex-direction: column;
+}
+
+.caja-articulo{
+    flex-direction: column;
+    border-top: 1px solid #ebebeb;
+}
+
+.caja-precio{
+    flex-direction: row;
+    align-items: center;
 }
 
 .precios {
     font-size: 18px;
+    width: 30%;
 }
 
 .descuentos {
     font-size: 16px;
+    width: 70%;
 }
 
 .descripcion {
     font-size: 16px;
+    display: none;
+}
+
+.articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+.articulo:hover .descripcion{
+    display:block;
+    
+}
+
+.articulo:hover .fa-truck{
+
+    transform: rotate(-90deg)
+}
+
+.descuentos{
+    color: #39b54a;
+    font-weight: bold;
 }
 
 
-.color-verde {
-    color: #39b54a ;
+.fa-truck {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    padding: 1%;
+    border-radius: 50%;
+    font-size: 16px;
+    justify-self: right;
+    background-color: white;
+    margin-left: 85%;
+    transition: width 2s, height 2s, transform 2s;
 }
 
-.color-azul {
-    color:#03264C;
+.color-verde{
+    margin-top: -12px;
+}
+
+footer .color-azul {
+    color:#0022AA;
 }
 
 .articulo {
@@ -187,10 +274,180 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: white;
+    text-align: center;
 }
 
 footer article{
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
+}
+
+footer p {
+    font-family: 'rotobo', sans-serif;
+    font-size: 12px;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) { 
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.contenedor-header{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 65%;
+}
+
+.logo{
+    width: 25%;
+    margin-left: 2%;
+}
+.busqueda{
+    width: 70%;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.busqueda input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-style: none;
+}
+
+.busqueda button{
+    position: relative;
+    background-color: white;
+    border: none;
+    height: 32px;
+    border-style: none;
+}
+
+.titulo-principal{
+    font-size: 16px;
+    justify-self: center;
+    margin-left: 5%;
+    margin-top: 45px;
+    width: 30%;
+}
+
+.toggle-button {
+    display:block;
+    width:100%;
+    height:0;
+    color: 0;
+    background-color:  00;
+    border:0;
+    border-radius: 0;
+    position:0;
+    cursor: 0;
+    box-sizing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.toggle-button:hover {
+    background-color: 0;
+}
+
+.toggle-button:before, .toggle-button:after {
+    position:0;
+    display:0;
+    content:0;
+    width: 0;               
+    box-sizing: 0;
+    left: 0;
+    transition: 0;
+}
+
+.toggle-button:before {
+    top: 0;
+    height:0;
+    border-top:0;
+    border-bottom:0;
+    background-color: 0;
+}
+
+.toggle-button:after {
+    height:0;
+    background-color:0;
+    bottom:0;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -10px;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+    color: black;
+}
+
+.links li{
+    margin-left: 20px;
+}
+
+.links li:nth-child(5){
+    margin-left: 55%;
+}
+
+.titulares{
+    width: 100%;
+    margin-left: 6%;
+    font-weight: bold;
+    font-family: "roboto";
+}
+
+.ultima-visita{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articulo{
+    width: 20%;
+    margin-left: 20px
+
+}
+
+.container-articulos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fa-truck {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    padding: 1%;
+    border-radius: 50%;
+    font-size: 16px;
+    justify-self: right;
+    background-color: white;
+    margin-left: 85%;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.color-verde{
+    margin-top: -12px;
+}
+
+
 }

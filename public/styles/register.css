@@ -124,6 +124,29 @@ p {
     font-size: 12px;
 }
 
+.titulo{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-perfil{
+    flex-direction: row;
+    width: 90%;
+}
+
+.input-perfil input{
+    width: 25%;
+}
+
+.input-intereses{
+    flex-direction: column;
+    width: 90%;
+}
+
+.input-intereses input{
+    width: 25%;
+}
+
 .input{
     width: 95%;
     padding: 10px;
@@ -175,4 +198,8 @@ footer article{
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
+}
+
+footer .color-azul {
+    color:#0022AA;
 }

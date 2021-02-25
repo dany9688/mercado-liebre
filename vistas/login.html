@@ -10,18 +10,17 @@
     
 <body>
         
-    <header>
-        <div>
-            <img  class="logo w-50"src="/img/logo-mercado-liebre.svg" alt="">
-            <form action="POST">
-                <input class="w-50" type="text" placeholder="Busqueda"><button type="sumbit"><i class="fas fa-search"></i></button>
-    
+    <header class="dp-flex">
+        <div class="contenedor-header dp-flex">
+            <img  class="logo"src="/img/logo-mercado-liebre.svg" alt="">
+            <form class="busqueda" action="POST">
+                <input type="text" placeholder="Busqueda"><button type="sumbit"><i class="fas fa-search"></i></button>
             </form>
-            <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de credito</p>
         </div>
+        <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de credito</p>
         <nav id="menu">
     
-            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" /> 
             <label for="abrir-cerrar" class="toggle-button">
                 <span class="cerrar" title="Cerrar">Cerrar</span>
                 <span class="abrir" title="Abrir">Abrir</span>
@@ -37,8 +36,6 @@
                     <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
                 </ul>
             </label>
-
-    
     
         </nav>
     </header>

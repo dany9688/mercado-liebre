@@ -2,9 +2,26 @@ body{
     background-color: #ebebeb;
 }
 
+.dp-flex{
+    display: flex;
+}
+
 header {
     background-color: #EAC926;
-padding-bottom: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+
+.contenedor-header{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    width: 50%;
+}
+.busqueda{
+    width: 50%;
 }
 
 #menu{
@@ -160,4 +177,7 @@ footer article{
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
+}
+footer .color-azul {
+    color:#0022AA;
 }
